@@ -1,0 +1,37 @@
+:root {
+    --scale_p: 100%;
+    --scale_s: 50%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 40px 25% 50%;
+    justify-content: center;
+    margin: 20px;
+}
+
+.options {
+    justify-content: center;
+}
+
+.options > * {
+    margin-top: 10px;
+}
+
+
+.preview > * {
+    width: var(--scale_p);
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.stitched > img {
+    width: var(--scale_s);
+}
+
+.slider {
+    width: 80%;
+}

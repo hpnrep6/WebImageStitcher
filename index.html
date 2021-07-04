@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Stitcher</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="./index.js"></script>
+    </head>
+
+    <body>
+        <div class="grid">
+            <div class="options">
+                Select files to stitch:
+                <br>
+                <input type="file" name="files" id="imageSelect" accept="image/png, image/jpeg, image/gif" multiple>
+                <br>
+                <button type="button" id="stitch">Stitch!</button>
+                <button type="button" id="download">Download</button>
+                <br>
+                <div id="s_p_text">
+                    Preview scale: 100%
+                </div>
+                <br>
+                <input type="range" min=".5" max="100" value="100" id="slider_p" step="0.5" class="slider">
+                <br>
+                <div id="s_s_text">
+                    Stitched preview scale: 50%
+                </div>
+                <br>
+                <input type="range" min=".5" max="100" value="50" id="slider_s" step="0.5" class="slider">
+            </div>
+            <div class="rearrange">
+                <canvas width="40px" height="0px" id="drag">
+            </div>
+            <div id="preview" class="preview">
+                
+            </div>
+            <div id="stitched" class="stitched">
+                
+            </div>
+        </div>  
+    </body>
+</html>
