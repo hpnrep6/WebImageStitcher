@@ -1,0 +1,3 @@
+## WebImageStitcher
+
+Stitches images vertically
